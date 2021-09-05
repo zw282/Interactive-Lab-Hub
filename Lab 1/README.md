@@ -85,6 +85,7 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
+
 **Feedback:** We both thought that the “fridge alarm” is a good idea since we both do not pay enough attention to what we have in the fridge. We always find out that we run out of groceries but do not have enough time to purchase them the next day. It let us know when to purchase groceries ahead! 
 
 
@@ -94,10 +95,12 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 Light and device placement 
+
 Initially, we placed the light inside the fridge. The overall experience has been good when the light is green - we know that we have enough food inside. However, as the purpose of the device is to remind the person when to purchase groceries, it should allow the person to know beforehand - what if they just found out they have below 30% of the necessary groceries but they do not have time to purchase groceries in the next two days? Therefore, we staged the light outside the fridge door since it should be placed where it is easily spotted. 
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
 Weight vs. space measurement 
+
 We first thought that how “full” the fridge is would be measured by the device through either weighing the groceries inside the fridge or a visual cue of how much space is taken up. However, we found out that either weight or visual cue itself could not be a standalone measurement. First, we could not guarantee that groceries purchased by the person have similar weight each time, even for similar products - what if he bought apple juice instead of apples? If the device takes clues from visual measurements, it also can’t tell if the amount of food is enough - what if the person places an empty ice cream box in it? Therefore, we have learned that the real device should deploy a complex measurement using both weight and visual space.
 
 ## Part C. Prototype the device
@@ -117,6 +120,7 @@ If you run into technical issues with this tool, you can also use a light switch
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
+
 https://user-images.githubusercontent.com/90153252/132141556-81a21429-5798-4744-954f-61925c25f716.MP4
 
 
