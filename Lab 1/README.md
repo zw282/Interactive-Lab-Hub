@@ -85,6 +85,12 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 ![IMG_0308](https://user-images.githubusercontent.com/55099696/132140483-09af3f25-72e1-4716-8ff5-01ede406b47b.jpg)
 
+**Feedback:**
+We both thought that the “fridge alarm” is a good idea since we both do not pay enough attention to what we have in the fridge. We always find out that we run out of groceries but do not have enough time to purchase them the next day. It let us know when to purchase groceries ahead! 
+
+
+
+## Part B. Act out the Interaction
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 Light and device placement 
@@ -128,7 +134,7 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Include sketches of what your device might look like here.**\*\*
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
-
+One concern we had while designing the device was the size of the two parts device. The one inside the fridge has to be small enough that it does not take up too much space in the fridge. It also has to be waterproof and cold-resistant so that it can function well inside the fridge. The light outside the door needs to be obvious and bright enough. For now, we only used Tinkerbelle on our phone so it is square-shaped. 
 
 ## Part F. Record
 
