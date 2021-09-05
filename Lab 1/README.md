@@ -72,29 +72,28 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 _**Setting**:_ The interaction takes place in the kitchen, specifically the refrigerator. The interaction happens when the person opens the refrigerator.
 
-_**Player**:_ This interaction can happen between multiple players or a single player. There is no specific player that the device is designed to interact with. Whoever opens the refrigerator door becomes the player of the interaction.
+_**Player**:_ There is no specific player that the device is designed to interact with. Whoever walks by the fridge or opens the door of the fridge becomes the player of the interaction.
 
-_**Activity**:_ When the person opens the refrigerator, the color of the device indicates how full the refrigerator is. The green light shows that the refrigerator capacity has been filled to a certain amount (30% and above) that the person or the household members do not need to purchase extra groceries. If the light turns red, it indicates that the amount of groceries inside the fridge is now equal or below 30%, which signifies that the player should buy groceries to refill the fridge. Once the fridge holds above 30% of its capacity, the light will turn back to green.
+_**Activity**:_ The color of the light outside the fridge indicates how full the refrigerator is. The green light shows that the refrigerator capacity has been filled to a certain amount (30% and above) that the person or the household members do not need to purchase extra groceries. If the light turns red, it indicates that the amount of groceries inside the fridge is now equal or below 30%, which signifies that the player should buy groceries to refill the fridge. Once the fridge holds above 30% of its capacity, the light will turn back to green.
 
-_**Goals**:_ To help the person know and to remind them what is a good time to purchase new groceries and refill the refrigerator once they open the door of the fridge.
+_**Goals**:_ To help the person (and whoever sees the light!) know and to remind them what is a good time to purchase new groceries and refill the refrigerator once they open the door of the fridge.
 
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
 \*\***Include a picture of your storyboard here**\*\*
-
-Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
-
-\*\***Summarize feedback you got here.**\*\*
-
-
-## Part B. Act out the Interaction
-
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+![IMG_0308](https://user-images.githubusercontent.com/55099696/132140483-09af3f25-72e1-4716-8ff5-01ede406b47b.jpg)
+
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+Light and device placement 
+Initially, we placed the light inside the fridge. The overall experience has been good when the light is green - we know that we have enough food inside. However, as the purpose of the device is to remind the person when to purchase groceries, it should allow the person to know beforehand - what if they just found out they have below 30% of the necessary groceries but they do not have time to purchase groceries in the next two days? Therefore, we staged the light outside the fridge door since it should be placed where it is easily spotted. 
+
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+Weight vs. space measurement 
+We first thought that how “full” the fridge is would be measured by the device through either weighing the groceries inside the fridge or a visual cue of how much space is taken up. However, we found out that either weight or visual cue itself could not be a standalone measurement. First, we could not guarantee that groceries purchased by the person have similar weight each time, even for similar products - what if he bought apple juice instead of apples? If the device takes clues from visual measurements, it also can’t tell if the amount of food is enough - what if the person places an empty ice cream box in it? Therefore, we have learned that the real device should deploy a complex measurement using both weight and visual space.
 
 
 ## Part C. Prototype the device
@@ -108,7 +107,7 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
-
+All is good except for installation. :)
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
