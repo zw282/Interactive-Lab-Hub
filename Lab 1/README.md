@@ -144,6 +144,7 @@ Think about the setting of the device: is the environment a place where the devi
 ![IMG_0310](https://user-images.githubusercontent.com/90153252/132141339-a563cad3-a6db-4315-8842-e61b91984423.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
 One concern we had while designing the device was the size of the two parts device. The one inside the fridge has to be small enough that it does not take up too much space in the fridge. It also has to be waterproof and cold-resistant so that it can function well inside the fridge. The light outside the door needs to be obvious and bright enough. For now, we only used Tinkerbelle on our phone so it is square-shaped. 
 
 ## Part F. Record
