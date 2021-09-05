@@ -1,4 +1,4 @@
-
+**Collaboration with Ruby Pan DP478**
 
 # Staging Interaction
 
@@ -69,6 +69,15 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+
+_**Setting**:_ The interaction takes place in the kitchen, specifically the refrigerator. The interaction happens when the person opens the refrigerator.
+
+_**Player**:_ This interaction can happen between multiple players or a single player. There is no specific player that the device is designed to interact with. Whoever opens the refrigerator door becomes the player of the interaction.
+
+_**Activity**:_ When the person opens the refrigerator, the color of the device indicates how full the refrigerator is. The green light shows that the refrigerator capacity has been filled to a certain amount (30% and above) that the person or the household members do not need to purchase extra groceries. If the light turns red, it indicates that the amount of groceries inside the fridge is now equal or below 30%, which signifies that the player should buy groceries to refill the fridge. Once the fridge holds above 30% of its capacity, the light will turn back to green.
+
+_**Goals**:_ To help the person know and to remind them what is a good time to purchase new groceries and refill the refrigerator once they open the door of the fridge.
+
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
