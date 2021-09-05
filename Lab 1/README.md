@@ -70,8 +70,11 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 **Setting:** The interaction takes place in the kitchen, specifically the refrigerator. The interaction happens when the person opens the refrigerator.
+
 **Player:** There is no specific player that the device is designed to interact with. Whoever walks by the fridge or opens the door of the fridge becomes the player of the interaction.
+
 **Activity:** The color of the light outside the fridge indicates how full the refrigerator is. The green light shows that the refrigerator capacity has been filled to a certain amount (30% and above) that the person or the household members do not need to purchase extra groceries. If the light turns red, it indicates that the amount of groceries inside the fridge is now equal or below 30%, which signifies that the player should buy groceries to refill the fridge. Once the fridge holds above 30% of its capacity, the light will turn back to green.
+
 **Goals:** To help the person (and whoever sees the light!) know and to remind them what is a good time to purchase new groceries and refill the refrigerator once they open the door of the fridge.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
