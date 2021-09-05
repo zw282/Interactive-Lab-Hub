@@ -69,6 +69,7 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+
 **Setting:** The interaction takes place in the kitchen, specifically the refrigerator. The interaction happens when the person opens the refrigerator.
 
 **Player:** There is no specific player that the device is designed to interact with. Whoever walks by the fridge or opens the door of the fridge becomes the player of the interaction.
@@ -94,11 +95,13 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+
 Light and device placement 
 
 Initially, we placed the light inside the fridge. The overall experience has been good when the light is green - we know that we have enough food inside. However, as the purpose of the device is to remind the person when to purchase groceries, it should allow the person to know beforehand - what if they just found out they have below 30% of the necessary groceries but they do not have time to purchase groceries in the next two days? Therefore, we staged the light outside the fridge door since it should be placed where it is easily spotted. 
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
 Weight vs. space measurement 
 
 We first thought that how “full” the fridge is would be measured by the device through either weighing the groceries inside the fridge or a visual cue of how much space is taken up. However, we found out that either weight or visual cue itself could not be a standalone measurement. First, we could not guarantee that groceries purchased by the person have similar weight each time, even for similar products - what if he bought apple juice instead of apples? If the device takes clues from visual measurements, it also can’t tell if the amount of food is enough - what if the person places an empty ice cream box in it? Therefore, we have learned that the real device should deploy a complex measurement using both weight and visual space.
@@ -152,8 +155,10 @@ https://user-images.githubusercontent.com/90153252/132141416-50cc3e05-a1b4-404a-
 
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
+
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-Emma Zhenghe Wang zw282
+
+**Emma Zhenghe Wang zw282**
 
 
 # Staging Interaction, Part 2 
