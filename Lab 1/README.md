@@ -1,4 +1,4 @@
-Collaboration with Emma Zhenghe Wang zw282
+**Collaboration with Emma Zhenghe Wang zw282**
 
 # Staging Interaction
 
@@ -114,15 +114,14 @@ If you run into technical issues with this tool, you can also use a light switch
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
-https://user-images.githubusercontent.com/90153252/132141377-c987d280-d8fa-43ad-8faf-01c2fa275e00.MOV
+https://user-images.githubusercontent.com/90153252/132141556-81a21429-5798-4744-954f-61925c25f716.MP4
 
 
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
-![IMG_5002](https://user-images.githubusercontent.com/90153252/132141380-6ad2aeb5-2ff8-4c1e-a678-a4fd6bda78a8.jpg)
-
+![IMG_5006](https://user-images.githubusercontent.com/90153252/132141551-93c9da20-4239-4a8b-9e2b-a20a63d3b28a.JPG)
 
 
 ## Part E. Costume the device
