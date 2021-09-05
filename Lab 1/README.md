@@ -122,7 +122,13 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
+
+https://user-images.githubusercontent.com/55099696/132141031-b77e8ddb-3435-44b1-b679-9ff2e7fb18fc.MOV
+
+
+
 \*\***Show the follow-up work here.**\*\*
+![IMG_5002](https://user-images.githubusercontent.com/55099696/132141249-838011da-2dde-4e7a-8479-f5d38c53f2e1.jpg)
 
 
 ## Part E. Costume the device
@@ -132,6 +138,8 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your device might look like here.**\*\*
+<img width="563" alt="Screen Shot 2021-09-05 at 5 02 39 PM" src="https://user-images.githubusercontent.com/55099696/132141374-9729bae6-9bb4-4842-b8b6-f4ca0a6e06d3.png">
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 One concern we had while designing the device was the size of the two parts device. The one inside the fridge has to be small enough that it does not take up too much space in the fridge. It also has to be waterproof and cold-resistant so that it can function well inside the fridge. The light outside the door needs to be obvious and bright enough. For now, we only used Tinkerbelle on our phone so it is square-shaped. 
@@ -140,9 +148,15 @@ One concern we had while designing the device was the size of the two parts devi
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+
+https://user-images.githubusercontent.com/55099696/132141392-019f05b2-7a63-4eff-8aa9-585b9b129666.mov
+
+
+
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-
+Ruby Pan - DP478
 
 
 # Staging Interaction, Part 2 
