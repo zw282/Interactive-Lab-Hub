@@ -123,12 +123,17 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 
-https://user-images.githubusercontent.com/55099696/132141031-b77e8ddb-3435-44b1-b679-9ff2e7fb18fc.MOV
+
+
+https://user-images.githubusercontent.com/55099696/132141438-af098808-3127-47b5-9635-45654ab48a93.MOV
+
+
 
 
 
 \*\***Show the follow-up work here.**\*\*
-![IMG_5002](https://user-images.githubusercontent.com/55099696/132141249-838011da-2dde-4e7a-8479-f5d38c53f2e1.jpg)
+![IMG_5002](https://user-images.githubusercontent.com/55099696/132141428-37d210cd-f84f-40bc-8bb2-260fe512d4c4.jpg)
+
 
 
 ## Part E. Costume the device
