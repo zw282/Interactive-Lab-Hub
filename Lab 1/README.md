@@ -174,6 +174,15 @@ This describes the second week's work for this lab activity.
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
 \*\***Summarize feedback from your partners here.**\*\*
+- I love the concept of having a device that can alert you of the food level in your fridge. I love that you considered weight and space issues in your implementation. I wish the device was programable so I can set at what percentage the light will be red.
+Xingyu Tao , Sep 7 at 9:47pm
+
+Hi Zhenghe, Thanks for sharing your design, I really like it. I think that it tries to tackle a problem that many people have today which is forgetting to purchase enough food storage before too late. Using the light to show is a direct and obvious way convenient for the users to notice. Two thing you may need to consider though is that 1) you may need to specify what the 30% actually means, it can be volume or weight, or you can even make it more detailed grouping by categories. 2) There are people may have different opinion about how full they want their fridge to be, so a bit personalization may make it better. Hope these two pieces of advice can help you improve the product. And thanks for the great work.
+Jenny Li , Sep 8 at 1:44am
+
+From the feedback, I found several things that we could improve on our design
+1. Make it programmable so that users could set what exact percentage they hope the device can make the alert. Also, some people might have different opinion on. how full they want their fridge to be, so the "green level" should allow personalization as well.
+2. Specify how the sensor works - maybe group into categories what parts use weight and what parts uses volume.
 
 ## Make it your own
 
