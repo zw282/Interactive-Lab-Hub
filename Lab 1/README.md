@@ -173,6 +173,10 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+1. Display nothing instead of a green light where the fridge is full.
+2. Use different colors to indicate different amounts of groceries. For example, add a yellow light to show the grocery is below a certain level, and a red light to show that the level is really low.
+3. Use multiple light indicators for different categories. For example, one light represents fruits, and another light represents veggies. The lights could take their measurements from the shelves that you place items on, so the top shelf could be strictly for meats, the bottom shelf for veggies, and etc. 
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
