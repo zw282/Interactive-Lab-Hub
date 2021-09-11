@@ -227,9 +227,6 @@ As we stage our interaction, we found that we did not fully consider the two com
 
 
 
-![IMG_5002](https://user-images.githubusercontent.com/55099696/132957941-dcaeac34-d40a-4e0f-8e96-89c4af53caf5.jpg)
-
-
 https://user-images.githubusercontent.com/55099696/132957944-1858f52c-bed0-4b46-b410-66c39dd6ba18.mp4
 
 
@@ -246,6 +243,10 @@ https://user-images.githubusercontent.com/55099696/132957944-1858f52c-bed0-4b46-
 (from part B) Through the feedback we have received, we added a touch screen and personalization function to the light. Now the device allows users to set their ideal level of when the “yellow light” and “red light” turns on just through pressing the button and adjust the level through the bar. Therefore, the size of the light should be larger than what we designed last time. 
 
 ## Part F. Record
+
+
+https://user-images.githubusercontent.com/55099696/132958492-203c3e11-e2a3-41ea-8346-dae6345e87ec.mp4
+
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
