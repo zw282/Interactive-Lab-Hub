@@ -117,6 +117,7 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
+Tinkerbelle works well on my laptop and phone.
 
 
 ## Part D. Wizard the device
@@ -189,6 +190,8 @@ Do last week’s assignment again, but this time:
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
+## Part A. Plan 
+
 **Setting:** The interaction takes place in the kitchen, specifically the refrigerator. The interaction happens when the person walks by or opens the fridge.
 
 **Player:** There is no specific player that the device is designed to interact with. Whoever walks by the fridge or opens the door of the fridge becomes the player of the interaction.
@@ -197,9 +200,12 @@ Do last week’s assignment again, but this time:
 
 **Goals:** To help the person (and whoever sees the light!) know and to remind them what is a good time to purchase new groceries and refill the refrigerator.
 
+\*\***Include a picture of your storyboard here**\*\*
+
 ![IMG_0313](https://user-images.githubusercontent.com/90153252/132957946-3852f5da-6f94-4307-b098-366392d9efab.jpg)
 
 
+## Part B. Act out the Interaction
 **Are there things that seemed better on paper than acted out?** 
 
 (from part A) Light and device placement Initially, we placed the light inside the fridge. The overall experience has been good when the light is green - we know that we have enough food inside. However, as the purpose of the device is to remind the person when to purchase groceries, it should allow the person to know beforehand - what if they just found out they have below 30% of the necessary groceries but they do not have time to purchase groceries in the next two days? Therefore, we staged the light outside the fridge door since it should be placed where it is easily spotted.
@@ -216,7 +222,18 @@ Do last week’s assignment again, but this time:
 
 (from part B) Through the feedback we have received, we added a touch screen and personalization function to the light. Now the device allows users to set their ideal level of when the “yellow light” and “red light” turns on just through pressing the button and adjust the level through the bar. Therefore, the size of the light should be larger than what we designed last time. 
 
+
+## Part E. Costume the device
+
 ![IMG_0314](https://user-images.githubusercontent.com/90153252/132957972-d74590c0-93da-4b34-bb85-6eac2a2da815.jpg)
+
+
+
+## Part F. Record
+
+https://user-images.githubusercontent.com/90153252/132958512-e93643b2-8bd0-4477-9c63-30e425921e77.mp4
+
+
 
 
 
