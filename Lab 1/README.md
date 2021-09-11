@@ -225,7 +225,18 @@ As we stage our interaction, we found that we did not fully consider the two com
 
 ## Part D. Wizard the device
 
+
+
+https://user-images.githubusercontent.com/55099696/132957892-67426922-4822-4711-9d98-3f9c251f1e00.mp4
+
+![IMG_5002](https://user-images.githubusercontent.com/55099696/132957898-45c488f0-efbf-4fc7-b6ef-9734e280200b.jpg)
+
+
+
 ## Part E. Costume the device
+
+![WechatIMG197](https://user-images.githubusercontent.com/55099696/132957855-c13d3722-7be0-4fa2-be41-e7c5997c7e2f.jpeg)
+
 
 (from part A) One concern we had while designing the device was the size of the two parts device. The one inside the fridge has to be small enough that it does not take up too much space in the fridge. It also has to be waterproof and cold-resistant so that it can function well inside the fridge. The light outside the door needs to be obvious and bright enough. For now, we only used Tinkerbelle on our phone so it is square-shaped.
 
