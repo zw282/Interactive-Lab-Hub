@@ -227,9 +227,12 @@ As we stage our interaction, we found that we did not fully consider the two com
 
 
 
-https://user-images.githubusercontent.com/55099696/132957892-67426922-4822-4711-9d98-3f9c251f1e00.mp4
+![IMG_5002](https://user-images.githubusercontent.com/55099696/132957941-dcaeac34-d40a-4e0f-8e96-89c4af53caf5.jpg)
 
-![IMG_5002](https://user-images.githubusercontent.com/55099696/132957898-45c488f0-efbf-4fc7-b6ef-9734e280200b.jpg)
+
+https://user-images.githubusercontent.com/55099696/132957944-1858f52c-bed0-4b46-b410-66c39dd6ba18.mp4
+
+
 
 
 
