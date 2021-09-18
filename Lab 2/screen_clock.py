@@ -76,6 +76,7 @@ while True:
     # Show the current time.
     y = top
     draw.text((x, y), "current time is:", font=font, fill="#FFFFFF")
+    y += font.getsize("current time is:")[1]
     draw.text((x, y), current_time, font=font, fill="#FFFFFF")
  
     # Display image.
