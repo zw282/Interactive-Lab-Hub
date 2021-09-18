@@ -68,22 +68,15 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    #set time now
+    # Set time now
     now = datetime.now()
-    current_time = now.strftime("%m/%d/%Y %H:%M:%S")#, end="", flush=True)
-    #print("\current time is ", end="", flush=True)
-  
-    
+    current_time = now.strftime("%m/%d/%Y %H:%M:%S")
+ 
 
-    # Write four lines of text.
+    # Show the current time.
     y = top
+    draw.text((x, y), "current time is:", font=font, fill="#FFFFFF")
     draw.text((x, y), current_time, font=font, fill="#FFFFFF")
-    #y += font.getsize(IP)[1]
-    #draw.text((x, y), WTTR, font=font, fill="#FFFF00")
-    #y += font.getsize(WTTR)[1]
-    #draw.text((x, y), USD, font=font, fill="#0000FF")
-    #y += font.getsize(USD)[1]
-    #draw.text((x, y), Temp, font=font, fill="#FF00FF")
  
     # Display image.
     disp.image(image, rotation)
