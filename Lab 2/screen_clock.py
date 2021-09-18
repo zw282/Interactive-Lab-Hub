@@ -4,6 +4,8 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+from time import strftime, sleep
+from datetime import datetime
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -65,6 +67,11 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    #set time now
+    now = datetime.now()
+    print (now.strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
+    print("\current time is ", end="", flush=True)
+    sleep(1)
 
     # Display image.
     disp.image(image, rotation)
