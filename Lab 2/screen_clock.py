@@ -84,8 +84,7 @@ while True:
     #draw.text((x, y), USD, font=font, fill="#0000FF")
     #y += font.getsize(USD)[1]
     #draw.text((x, y), Temp, font=font, fill="#FF00FF")
-    sleep(1)
-
+ 
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
