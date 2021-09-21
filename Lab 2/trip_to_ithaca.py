@@ -84,7 +84,8 @@ average_time = main_distance / driving_speed * 3600
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "Press A to start travelling to Ithaca", font=font, fill="#F9AD43")
+    draw.text((0, 0), "Press A", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To start travelling to Ithaca", font=font, fill="#F9AD43")
     disp.image(image, rotation)
     
     
@@ -106,8 +107,11 @@ while True:
         driving_time = end - start
         distance = (driving_speed * driving_time) / 3600
         percentage = (driving_time / average_time) * 100
-        draw.text((0, 0), "You have travelled" + str(distance) + "miles", font=font, fill="#F9AD43")
-        draw.text((0, 20), "That is" + str(percentage) + "% of the whole trip", font=font, fill="#F9AD43")
+        draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
+        draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
+        draw.text((0, 40), "That is" + %.3str(percentage) %str(percentage) + "%", font=font, fill="#F9AD43")
+        draw.text((0, 40), "of the whole trip", font=font, fill="#F9AD43")
+
         disp.image(image, rotation)
         time.sleep(5)
             
