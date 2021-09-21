@@ -1,4 +1,6 @@
 # Interactive Prototyping: The Clock of Pi
+# Collaboration with Zhenghe Wang zw282
+**!!!Code is at trip_to_ithaca.py!!! (not in screen_clock.py)**
 
 Does it feel like time is moving strangely during this semester?
 
@@ -192,9 +194,20 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
+For now, our clock calculates how long you have travelled from Roosevelt Island to Ithaca. It measures time by showing you the distance traveled and the percentage of this trip you have already finished. Press A to start the trip and press A again to end the trip.
+
+https://user-images.githubusercontent.com/90153252/134100107-6d5735df-54e3-40ac-ad28-c92fd7d3e4bf.mp4
+
+
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+![sketch](https://user-images.githubusercontent.com/90153252/134100219-02ea7e9b-0f97-4f4e-8bf8-ea2bcaeb8527.jpeg)
+
+For Part 2, we are thinking about making a fun clock interface based on coordinates. Users start from Roosevelt Island, more specifically, the House. Button A will allow users to choose the direction they wish to travel to - South, East, North, or West. And Button B will allow users to start and finish their travel. After choosing directions and pressing start, users will travel at a fixed speed. The clock will calculate the time and distance traveled. When users press stop, the clock will show a pair of coordinates of where the user is currently. Based on different duration and directions, the user will get different coordinates. They could simply lookup on Google Map to find out the exact location of the coordinates. 
+
+We designed this clock to be a travel mystery box -  you won't know where you will end up at every time. We hope this can give the user a fun experience when they are working on different things.
 
 # Prep for Part 2
 
