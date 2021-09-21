@@ -1,5 +1,6 @@
 # Interactive Prototyping: The Clock of Pi
 # Collaboration with Ruby Pan dp478
+# !!!!Code is at Trip_to_Ithaca.py!!!(NOT in screenclock)
 
 Does it feel like time is moving strangely during this semester?
 
@@ -196,7 +197,7 @@ https://user-images.githubusercontent.com/55099696/134099997-8155c220-d34d-445e-
 
 
 \*\*\***Take a video of your PiClock.**\*\*\*
-For now, our clock calculates how long you have travelled from Roosevelt Island to Ithaca. It measures time by showing you the distance traveled and the percentage of this trip you have already finished. Press A to start the trip and press B to end the trip.
+For now, our clock calculates how long you have travelled from Roosevelt Island to Ithaca. It measures time by showing you the distance traveled and the percentage of this trip you have already finished. Press A to start the trip and press A to end the trip.
 
 
 ## Part G. 
