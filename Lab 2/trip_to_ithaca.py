@@ -99,9 +99,12 @@ while True:
         time.sleep(0.5)
         
         while end == None:
+            print("?")
             if buttonB.value and not buttonA.value:
                 end = time.time()
+                print("ended")
         
+        print("here")
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         driving_time = end - start
         distance = (driving_speed * driving_time) / 3600
