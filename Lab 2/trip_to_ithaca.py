@@ -87,14 +87,13 @@ while True:
     if buttonB.value and not buttonA.value: # just button A pressed
         start = time.time()
         draw.text((0, 0), "Start travelling to Ithaca", font=font, fill="#F9AD43")
-      if buttonA.value and not buttonB.value:   # just button B pressed
-          end = time.time()
-          driving_time = end - start
-          distance = (driving_speed * driving_time) / 3600
-          percentage = (float(driving_time) / average_time) * 100
-          draw.text((0, 0), "You have travelled" + distance + "miles", font=font, fill="#F9AD43")
-          draw.text((0, 20), "That is" + percentage + "% of the whole trip", font=font, fill="#F9AD43")
-    else:
+        if buttonA.value and not buttonB.value:   # just button B pressed
+            end = time.time()
+            driving_time = end - start
+            distance = (driving_speed * driving_time) / 3600
+            percentage = (float(driving_time) / average_time) * 100
+            draw.text((0, 0), "You have travelled" + distance + "miles", font=font, fill="#F9AD43")
+            draw.text((0, 20), "That is" + percentage + "% of the whole trip", font=font, fill="#F9AD43")
           
     
     # Display image.
