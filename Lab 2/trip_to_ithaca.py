@@ -107,7 +107,8 @@ while True:
         driving_time = end - start
         distance = (driving_speed * driving_time) / 3600
         percentage = (driving_time / average_time) * 100
-        percentage = %.3percentage % percentage
+        percentage = round(percentage,3)
+        distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
         draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
         draw.text((0, 40), "That is" + str(percentage) + "%", font=font, fill="#F9AD43")
