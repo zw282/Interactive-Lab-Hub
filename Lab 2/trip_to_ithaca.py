@@ -80,23 +80,52 @@ driving_speed = 55
 # This is the average driving time in seconds
 average_time = main_distance / driving_speed * 3600
 
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
-    if buttonB.value and not buttonA.value: # just button A pressed
+    draw.text((0, 0), "Press A to start travelling to Ithaca", font=font, fill="#F9AD43")
+    disp.image(image, rotation)
+    
+    
+    end = None
+    
+    if buttonB.value and not buttonA.value:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
         start = time.time()
-        draw.text((0, 0), "Start travelling to Ithaca", font=font, fill="#F9AD43")
-        draw.text((0, 20), str(start), font=font, fill="#F9AD43")
-        if buttonA.value and not buttonB.value:   # just button B pressed
-            end = time.time()
-            driving_time = end - start
-            distance = (driving_speed * driving_time) / 3600
-            percentage = (driving_time / average_time) * 100
-            draw.text((0, 0), "You have travelled" + distance + "miles", font=font, fill="#F9AD43")
-            draw.text((0, 20), "That is" + percentage + "% of the whole trip", font=font, fill="#F9AD43")
+        START = 'Start traveling'
+        draw.text((0, 20), START, font=font, fill="#F9AD43")
+        disp.image(image, rotation)
+        time.sleep(0.5)
+        
+        while end == None:
+            if buttonB.value and not buttonA.value:
+                end = time.time()
+        
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        driving_time = end - start
+        distance = (driving_speed * driving_time) / 3600
+        percentage = (driving_time / average_time) * 100
+        draw.text((0, 0), "You have travelled" + distance + "miles", font=font, fill="#F9AD43")
+        draw.text((0, 20), "That is" + percentage + "% of the whole trip", font=font, fill="#F9AD43")
+        disp.image(image, rotation)
+        time.sleep(5)
+            
+            
+        
+
+#     if buttonB.value and not buttonA.value: # just button A pressed
+#         start = time.time()      
+#         draw.text((0, 20), str(start), font=font, fill="#F9AD43")
+#         if buttonA.value and not buttonB.value:   # just button B pressed
+#             end = time.time()
+#             driving_time = end - start
+#             distance = (driving_speed * driving_time) / 3600
+#             percentage = (driving_time / average_time) * 100
+#             draw.text((0, 0), "You have travelled" + distance + "miles", font=font, fill="#F9AD43")
+#             draw.text((0, 20), "That is" + percentage + "% of the whole trip", font=font, fill="#F9AD43")
           
     
     # Display image.
-    disp.image(image, rotation)
-    time.sleep(1)
+#     disp.image(image, rotation)
+#     time.sleep(0.5)
