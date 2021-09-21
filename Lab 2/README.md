@@ -1,6 +1,6 @@
 # Interactive Prototyping: The Clock of Pi
-# Collaboration with Zhenghe Wang zw282
-**!!!Code is at trip_to_ithaca.py!!! (not in screen_clock.py)**
+**Collaboration with Zhenghe Wang zw282**
+**!!!Code is in trip_to_ithaca.py!!! (not in screen_clock.py)**
 
 Does it feel like time is moving strangely during this semester?
 
