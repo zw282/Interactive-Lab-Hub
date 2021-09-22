@@ -78,12 +78,12 @@ button.switch_to_input()
 tata = (40.7578325,-73.9559878) #(lat, lon)
 
 # This is the average driving speed mph
-driving_speed = 55
+driving_speed = 10000
 
 # This is the average driving time in seconds
 #average_time = main_distance / driving_speed * 3600
 
-#default driving to the east
+
 
 
 while True:
@@ -113,7 +113,7 @@ while True:
         distance = (driving_speed * driving_time) / 3600
         #percentage = (driving_time / average_time) * 100
         #percentage = round(percentage,3)
-        current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
+        current_co = inverse_haversine(tata, distance, Direction.SOUTH, unit = Unit.MILES)
         current_co = (round(current_co[0],3),round(current_co[1],3))
         distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
