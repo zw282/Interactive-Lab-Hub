@@ -81,7 +81,7 @@ tata = (40.7578325,-73.9559878) #(lat, lon)
 driving_speed = 55
 
 # This is the average driving time in seconds
-average_time = main_distance / driving_speed * 3600
+#average_time = main_distance / driving_speed * 3600
 
 #default driving to the east
 
