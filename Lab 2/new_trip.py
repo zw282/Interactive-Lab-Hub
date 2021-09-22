@@ -114,6 +114,7 @@ while True:
         #percentage = (driving_time / average_time) * 100
         #percentage = round(percentage,3)
         current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
+        current_co = (round(current_co[1],3),round(current_co[2],3))
         distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
         draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
