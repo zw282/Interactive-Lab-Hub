@@ -90,7 +90,7 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((0, 0), "Press A", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To start travelling to Ithaca", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To start travelling to the EAST", font=font, fill="#F9AD43")
     disp.image(image, rotation)
     
     
@@ -117,8 +117,10 @@ while True:
         distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
         draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
-        draw.text((0, 40), "Your coordinates are" + str(current_co) + "%", font=font, fill="#F9AD43")
-        draw.text((0, 60), "Check where you are!", font=font, fill="#F9AD43")
+        draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
+        draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+
+        draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
 
         disp.image(image, rotation)
         time.sleep(5)
