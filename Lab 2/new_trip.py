@@ -90,7 +90,9 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((0, 0), "Press A", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To start travelling to the EAST", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To start travelling from TATA", font=font, fill="#F9AD43")
+    draw.text((0, 40), "To the EAST", font=font, fill="#F9AD43")
+
     disp.image(image, rotation)
     
     
@@ -124,4 +126,4 @@ while True:
         draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
 
         disp.image(image, rotation)
-        time.sleep(5)
+        time.sleep(10)
