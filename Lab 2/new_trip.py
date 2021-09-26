@@ -104,6 +104,7 @@ while True:
         dirr = dirlist[0]
         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         START = 'Start traveling'
+        disp.image(image, rotation)
         time.sleep(1)
         
         if buttonB.value and not buttonA.value:
