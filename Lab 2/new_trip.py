@@ -101,7 +101,7 @@ while True:
     
     end = None
     
-     if buttonB.value and not buttonA.value:
+    if buttonB.value and not buttonA.value:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         
         dirr = dirlist[0]
