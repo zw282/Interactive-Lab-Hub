@@ -98,11 +98,11 @@ while True:
     
     end = None
     
-
-
     if buttonB.value and not buttonA.value:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        
         dirr = dirlist[0]
+        draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         START = 'Start traveling'
         time.sleep(1)
         
