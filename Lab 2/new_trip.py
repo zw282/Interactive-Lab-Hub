@@ -112,8 +112,8 @@ while True:
         
         
         if buttonA.value and not buttonB.value:
-            confirm == True: 
-                continue
+            confirm == True 
+            continue
             
     if confirm == True
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
