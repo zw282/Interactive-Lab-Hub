@@ -120,8 +120,8 @@ while True:
         confirm_dir = True         
     
     if not confirm_dir:
-        time.sleep(0.1)
-        continue
+        time.sleep(1)
+      
         
         end = None
     
