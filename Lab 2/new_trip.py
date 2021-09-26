@@ -10,6 +10,7 @@ import haversine
 from haversine import inverse_haversine, Direction, Unit
 from math import pi
 
+
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
 dc_pin = digitalio.DigitalInOut(board.D25)
@@ -96,11 +97,12 @@ while True:
 
     disp.image(image, rotation)
     
-    confirm_dir = False
+ 
     
     #direction loop from dir[0]
     i = 0
-    while buttonB.value and not buttonA.value:            
+    if buttonB.value and not buttonA.value:     
+        confirm_dir = False
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         dirr = dirlist[i]
         i = i+1
@@ -110,17 +112,18 @@ while True:
         disp.image(image, rotation)
         time.sleep(1)
         
-        while confirm_dir == False:
-            if buttonA.value and not buttonB.value:
-                draw.rectangle((0, 0, width, height), outline=0, fill=0)   
-                draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-                disp.image(image, rotation)            
-                time.sleep(1) 
-                confirm_dir = True 
-                continue 
-        
+    while confirm_dir == False:
+        if buttonA.value and not buttonB.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)   
+            draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+            disp.image(image, rotation)            
+            time.sleep(1) 
+            confirm_dir = True         
     
-    if confirm_dir == True:
+    if not confirm_dir:
+        time.sleep(0.1)
+        continue
+        
         end = None
     
         if buttonB.value and not buttonA.value:
