@@ -94,30 +94,30 @@ while True:
     draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
     draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
     draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
-
     disp.image(image, rotation)
     
  
-    confirm_dir = False
+    confirm_dir = False   
+    while confirm_dir == False:
     #direction loop from dir[0]
-    i = 0
-    if buttonB.value and not buttonA.value:     
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        dirr = dirlist[i]
-        i = i+1
-        if i >3 :
-            i = i % 4 - 1         
-        draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-        disp.image(image, rotation)
-        time.sleep(0.5)
+        i = 0
+        if buttonB.value and not buttonA.value:     
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)
+            dirr = dirlist[i]
+            i = i+1
+            if i >3 :
+                i = i % 4 - 1         
+            draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+            disp.image(image, rotation)
+            time.sleep(0.5)
+            continue 
         
-
-    if buttonA.value and not buttonB.value:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)   
-        draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-        disp.image(image, rotation)            
-        confirm_dir = True  
-        time.sleep(1) 
+        if buttonA.value and not buttonB.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)   
+            draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+            disp.image(image, rotation)            
+            confirm_dir = True  
+            time.sleep(1) 
     
     if confirm_dir == True:
         time.sleep(1)
