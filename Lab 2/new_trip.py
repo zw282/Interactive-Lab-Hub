@@ -100,7 +100,7 @@ while True:
     
     #direction loop from dir[0]
     i = -1
-    if i < 4 and buttonB.value:            
+    if buttonB.value and not buttonA.value:            
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         i = i+1
         dirr = dirlist[i]
