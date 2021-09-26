@@ -119,8 +119,8 @@ while True:
                 draw.rectangle((0, 0, width, height), outline=0, fill=0)
                 draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
                 disp.image(image, rotation)            
-                time.sleep(1)   
-        continue
+                time.sleep(0.5)   
+        
         
         end1 = None
 
