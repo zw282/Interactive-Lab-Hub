@@ -81,7 +81,7 @@ tata = (40.7578325,-73.9559878) #(lat, lon)
 driving_speed = 10000
 
 # This is the default direction
-dirlist = [EAST, WEST, SOUTH, NORTH]
+dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
 
 
