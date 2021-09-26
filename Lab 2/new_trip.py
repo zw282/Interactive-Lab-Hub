@@ -102,10 +102,10 @@ while True:
     i = 0
     if buttonB.value and not buttonA.value:            
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        dirr = dirlist[i]
         i = i+1
         if i >3 :
-            i = i % 4 - 1         
+            i = i % 4 - 1       
+        dirr = dirlist[i]
         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         disp.image(image, rotation)
         time.sleep(1)
