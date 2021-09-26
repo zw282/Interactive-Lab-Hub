@@ -115,6 +115,9 @@ while True:
             if buttonA.value and not buttonB.value:
                 draw.text((0, 0), "you are travelling" + str(dirr), font=font, fill="#F9AD43")
                 time.sleep(1)
+                
+        disp.image(image, rotation)
+        time.sleep(10)
 
     
     
