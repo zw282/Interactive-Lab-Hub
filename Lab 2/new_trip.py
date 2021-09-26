@@ -121,7 +121,7 @@ while True:
                 disp.image(image, rotation)            
                 time.sleep(1)   
     
-    end = None
+    end1 = None
     
     if buttonB.value and not buttonA.value:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -131,12 +131,12 @@ while True:
         disp.image(image, rotation)
         time.sleep(0.5)
         
-        while end == None:
+        while end1 == None:
             if buttonB.value and not buttonA.value:
-                end = time.time()
+                end1 = time.time()
         
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        driving_time = end - start
+        driving_time = end1 - start
         distance = (driving_speed * driving_time) / 3600
         #percentage = (driving_time / average_time) * 100
         #percentage = round(percentage,3)
