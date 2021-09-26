@@ -90,32 +90,31 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To start travelling from TATA", font=font, fill="#F9AD43")
-    draw.text((0, 40), "To the EAST", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
+    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
+    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
 
     disp.image(image, rotation)
     
     end = None
     
-    draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
-    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
-    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+
 
     if buttonB.value and not buttonA.value:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         dirr = dirlist[0]
         START = 'Start traveling'
-        time.sleep(0.5)
+        time.sleep(1)
         
         if buttonB.value and not buttonA.value:
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             dirr = dirlist[1]
-            time.sleep(0.5)
+            time.sleep(1)
             
         while end == None:
             if buttonA.value and not buttonB.value:
                 draw.text((0, 0), "you are travelling" + str(dirr), font=font, fill="#F9AD43")
+                time.sleep(1)
 
     
     
