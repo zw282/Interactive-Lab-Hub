@@ -100,19 +100,18 @@ while True:
     
     if buttonB.value and not buttonA.value:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        
         dirr = dirlist[0]
         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         START = 'Start traveling'
         disp.image(image, rotation)
-        time.sleep(0.5)
-        
+        time.sleep(1)
+       
         if buttonB.value and not buttonA.value:
             draw.rectangle((0, 0, width, height), outline=0, fill=0)
             dirr = dirlist[1]
             draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
             disp.image(image, rotation)
-            time.sleep(0.5)
+            time.sleep(1)
             
         while end == None:
             if buttonA.value and not buttonB.value:
@@ -138,8 +137,6 @@ while True:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         driving_time = end - start
         distance = (driving_speed * driving_time) / 3600
-        #percentage = (driving_time / average_time) * 100
-        #percentage = round(percentage,3)
         current_co = inverse_haversine(tata, distance, Direction.dirr, unit = Unit.MILES)
         current_co = (round(current_co[0],3),round(current_co[1],3))
         distance = round(distance,3)
