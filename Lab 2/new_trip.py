@@ -122,37 +122,8 @@ while True:
                 disp.image(image, rotation)            
                 time.sleep(1)   
                 
-        continue
 
-        if buttonB.value and not buttonA.value:
-            draw.rectangle((0, 0, width, height), outline=0, fill=0)
-            start = time.time()
-            START = 'Start traveling'
-            draw.text((0, 20), START, font=font, fill="#F9AD43")
-            disp.image(image, rotation)
-            time.sleep(0.5)
 
-            while end1 == None:
-                if buttonB.value and not buttonA.value:
-                    end1 = time.time()
-
-            draw.rectangle((0, 0, width, height), outline=0, fill=0)
-            driving_time = end1 - start
-            distance = (driving_speed * driving_time) / 3600
-            current_co = inverse_haversine(tata, distance, Direction.dirr, unit = Unit.MILES)
-            current_co = (round(current_co[0],3),round(current_co[1],3))
-            distance = round(distance,3)
-            draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
-            draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
-            draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
-            draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
-
-            draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
-            disp.image(image, rotation)
-            time.sleep(10)
-    
-    
-    
     
     
     
