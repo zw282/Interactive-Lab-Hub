@@ -100,11 +100,9 @@ while True:
     
     #direction loop from dir[0]
     i = -1
-    if buttonB.value and not buttonA.value:            
+    if buttonB.value and not buttonA.value and i < 4:            
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        i = i+1
-        if i > 3 :
-            i = i % 4 - 1   
+        i = i+1  
         dirr = dirlist[i]
         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         disp.image(image, rotation)
