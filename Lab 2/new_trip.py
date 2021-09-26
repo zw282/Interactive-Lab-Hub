@@ -116,8 +116,8 @@ while True:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)   
         draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
         disp.image(image, rotation)            
-        time.sleep(0.5) 
-        confirm_dir = True         
+        confirm_dir = True  
+        time.sleep(1) 
     
     if confirm_dir == True:
         time.sleep(1)
