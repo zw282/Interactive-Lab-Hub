@@ -110,9 +110,9 @@ while True:
     disp.image(image, rotation)
     time.sleep(1)
         
-        if buttonA.value and not buttonB.value:
-            confirm = True 
-            continue
+    if buttonA.value and not buttonB.value:
+        confirm = True 
+        continue
             
     if confirm == True:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
