@@ -137,7 +137,7 @@ while True:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         driving_time = end - start
         distance = (driving_speed * driving_time) / 3600
-        current_co = inverse_haversine(tata, distance, Direction.dirr, unit = Unit.MILES)
+        current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
         current_co = (round(current_co[0],3),round(current_co[1],3))
         distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
