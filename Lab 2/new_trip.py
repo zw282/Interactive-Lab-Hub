@@ -120,7 +120,7 @@ while True:
                 draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
                 disp.image(image, rotation)            
                 time.sleep(1)   
-                break
+            break
         
     end1 = None
     
