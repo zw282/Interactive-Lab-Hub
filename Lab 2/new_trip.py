@@ -83,18 +83,43 @@ driving_speed = 10000
 # This is the average driving time in seconds
 #average_time = main_distance / driving_speed * 3600
 
-
-
+# This is the default direction
+dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "Press A", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To start travelling from TATA", font=font, fill="#F9AD43")
-    draw.text((0, 40), "To the EAST", font=font, fill="#F9AD43")
+    draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
+    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
+    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
 
     disp.image(image, rotation)
     
+    end = None
+    
+    if buttonB.value and not buttonA.value:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        
+        dirr = dirlist[0]
+        draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+        START = 'Start traveling'
+        disp.image(image, rotation)
+        time.sleep(0.5)
+        
+        if buttonB.value and not buttonA.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=0)
+            dirr = dirlist[1]
+            draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+            disp.image(image, rotation)
+            time.sleep(0.5)
+            
+        while end == None:
+            if buttonA.value and not buttonB.value:
+                draw.rectangle((0, 0, width, height), outline=0, fill=0)
+                draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+                disp.image(image, rotation)            
+                time.sleep(1)   
     
     end = None
     
@@ -115,7 +140,7 @@ while True:
         distance = (driving_speed * driving_time) / 3600
         #percentage = (driving_time / average_time) * 100
         #percentage = round(percentage,3)
-        current_co = inverse_haversine(tata, distance, Direction.SOUTH, unit = Unit.MILES)
+        current_co = inverse_haversine(tata, distance, Direction.dirr, unit = Unit.MILES)
         current_co = (round(current_co[0],3),round(current_co[1],3))
         distance = round(distance,3)
         draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
