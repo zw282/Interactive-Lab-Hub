@@ -112,7 +112,7 @@ while True:
         
         
         if buttonA.value and not buttonB.value:
-            confirm = True: 
+            confirm == True: 
                 continue
             
     if confirm == True
