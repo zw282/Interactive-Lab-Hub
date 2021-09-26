@@ -98,11 +98,10 @@ while True:
     disp.image(image, rotation)
     
  
-    
+    confirm_dir = False
     #direction loop from dir[0]
     i = 0
     if buttonB.value and not buttonA.value:     
-        confirm_dir = False
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         dirr = dirlist[i]
         i = i+1
