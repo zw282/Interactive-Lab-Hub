@@ -99,17 +99,16 @@ while True:
     confirm = False
     
     #direction loop from dir[0]
-    i = 0
+    i = -1
     if buttonB.value and not buttonA.value:            
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
         i = i+1
-        if i >3 :
+        if i > 3 :
             i = i % 4 - 1       
-        dirr = dirlist[i]
-        draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-        disp.image(image, rotation)
-        time.sleep(1)
-        
+    dirr = dirlist[i]
+    draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+    disp.image(image, rotation)
+    time.sleep(1)
         
         if buttonA.value and not buttonB.value:
             confirm = True 
