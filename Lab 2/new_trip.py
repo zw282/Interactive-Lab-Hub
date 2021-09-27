@@ -173,7 +173,7 @@ while True:
     if screen == "dir_confirm" and (button_a_pressed() or button_b_pressed()):
         screen = "walk"
         print("confirmed - go to walk")
-        time.sleep(1)
+        #time.sleep(1)
     
     if screen == "walk" and button_a_pressed():
         print("start calculating time")
