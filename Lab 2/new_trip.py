@@ -121,14 +121,14 @@ def display_dir_confirm(i):
     draw.text((0, 20), "from TATA " + str(dirr), font=font, fill="#F9AD43")
     draw.text((0, 40), "press top to start ", font=font, fill="#F9AD43")
     disp.image(image, rotation)            
-    time.sleep(0.5)   
+    #time.sleep(0.5)   
     
 def display_walk_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
     dirr = str(dirr) 
     disp.image(rocket, rotation)
-    time.sleep(0.5)
+    #time.sleep(0.5)
 
     
 def display_walk_done_screen(start, i):
