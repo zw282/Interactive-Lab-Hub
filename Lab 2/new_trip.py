@@ -124,11 +124,11 @@ def display_walk_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
     dirr = str(dirr) 
-    disp.image(image, rotation)
+    disp.image(rocket, rotation)
     time.sleep(0.5)
 
     
-def display_walk_done_screen():
+def display_walk_done_screen(start):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     driving_time = end - start
     distance = (driving_speed * driving_time) / 3600
@@ -168,6 +168,7 @@ while True:
         
     if screen == "dir_confirm" and button_a_pressed() or button_b_pressed():
         screen = "walk"
+        print(1)
         time.sleep(1)
     
     if screen == "walk" and button_a_pressed():
