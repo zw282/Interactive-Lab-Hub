@@ -121,14 +121,14 @@ def display_dir_confirm(i):
     draw.text((0, 20), "from TATA " + str(dirr), font=font, fill="#F9AD43")
     draw.text((0, 40), "press top to start ", font=font, fill="#F9AD43")
     disp.image(image, rotation)            
-    #time.sleep(0.5)   
+    time.sleep(1)   
     
 def display_walk_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
     dirr = str(dirr) 
     disp.image(rocket, rotation)
-    #time.sleep(0.5)
+    time.sleep(1)
 
     
 def display_walk_done_screen(start, i):
@@ -173,19 +173,20 @@ while True:
     if screen == "dir_confirm" and (button_a_pressed() or button_b_pressed()):
         screen = "walk"
         print("confirmed - go to walk")
-        #time.sleep(1)
+        time.sleep(1)
     
     if screen == "walk" and button_a_pressed():
         print("start calculating time")
         start = time.time()
         disp.image(rocket, rotation)
+        time.sleep(1)
         
     if screen == "walk" and button_b_pressed():
         end = time.time()
         print("calculated time")
         screen = "walk_done"
         print("done")
-        time.sleep(0.5)
+        time.sleep(1)
     
 
 
