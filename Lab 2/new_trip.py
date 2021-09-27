@@ -109,7 +109,7 @@ while True:
     button_a_pressed = buttonB.value and not buttonA.value
     if screen == "main" and button_a_pressed:
         screen = "dir_selection"
-        time.sleep(1)
+        time.sleep(5)
      
     if screen == "main":
         display_main_screen()
