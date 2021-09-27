@@ -88,21 +88,34 @@ dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
 # main, dir_selection
 screen = "main"
+dir_selection_index = 0
+
+def display_main_screen():
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
+    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
+    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
+    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+   
+def display_dir_selection_screen():
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[0]
+    draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+    disp.image(image, rotation)
+    time.sleep(0.5)
+    
+
 
 while True:
     # Draw a black filled box to clear the image.
+    button_a_pressed = buttonB.value and not buttonA.value
+    if button_a_pressed:
+        screen = "dir_selection"
+     
     if screen == "main":
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-        draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
-        draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
-        draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+        display_main_screen()
     elif screen == "dir_selection":
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        dirr = dirlist[0]
-        draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-        disp.image(image, rotation)
-        time.sleep(0.5)
+        display_dir_selection_screen()
 
     # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
@@ -116,13 +129,13 @@ while True:
     
     # #direction loop from dir[0]
     # i = -1
-    # if buttonB.value and not buttonA.value:            
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    #     i = i+1
-    #     dirr = dirlist[i]
-    #     draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-    #     disp.image(image, rotation)
-    #     time.sleep(0.5)
+#     if buttonB.value and not buttonA.value:            
+#         draw.rectangle((0, 0, width, height), outline=0, fill=0)
+#         i = i+1
+#         dirr = dirlist[i]
+#         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+#         disp.image(image, rotation)
+#         time.sleep(0.5)
         
     #     if buttonA.value and not buttonB.value:
     #         confirm = True 
