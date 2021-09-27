@@ -112,6 +112,13 @@ def display_dir_confirm(i):
     disp.image(image, rotation)            
     time.sleep(0.5)   
     
+def display_walk_screen(i):
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[i]
+    dirr = str(dirr)    
+    time.sleep(0.5)
+    
+    
 def button_a_pressed():
     return buttonB.value and not buttonA.value
 
@@ -133,6 +140,29 @@ while True:
     if screen == "dir_selection" and button_b_pressed():
         screen = "dir_confirm"
         time.sleep(1)
+        
+        if screen == "dir_confirm" and button_a_pressed():
+        screen = "walk"
+   
+    if screen == "walk" and button_a_pressed():
+        start = time.time()
+        disp.image(image, rotation)
+
+                  
+    if screen == "walk" and button_b_pressed():
+        end = time.time()
+        driving_time = end - start
+        distance = (driving_speed * driving_time) / 3600
+        current_co = inverse_haversine(tata, distance, Direction.str(dirr), unit = Unit.MILES)
+        current_co = (round(current_co[0],3),round(current_co[1],3))
+        distance = round(distance,3)
+        draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
+        draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
+        draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
+        draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+        draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
+        disp.image(image, rotation)
+        time.sleep(10)
     
     # display screen
     if screen == "main":
@@ -141,6 +171,8 @@ while True:
         display_dir_selection_screen(dir_index)
     elif screen == "dir_confirm":
         display_dir_confirm(dir_index)
+    elif screen == "walk":
+        display_walk_screen(dir_index)
 
     disp.image(image, rotation)
     
