@@ -110,7 +110,7 @@ while True:
     # draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
     # draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
 
-    # disp.image(image, rotation)
+    disp.image(image, rotation)
     
     # confirm = False
     
@@ -161,5 +161,5 @@ while True:
 
     #     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
 
-        disp.image(image, rotation)
+#         disp.image(image, rotation)
     #     time.sleep(10)
