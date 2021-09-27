@@ -90,6 +90,9 @@ dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 # main, dir_selection
 screen = "main"
 dir_index = 0
+start = 0
+end = 0
+directions = [Direction.EAST, Direction.WEST, Direction.SOUTH, Direction.NORTH]
 
 
 # set up rocket image
@@ -128,11 +131,11 @@ def display_walk_screen(i):
     time.sleep(0.5)
 
     
-def display_walk_done_screen(start):
+def display_walk_done_screen(start, i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     driving_time = end - start
     distance = (driving_speed * driving_time) / 3600
-    current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
+    current_co = inverse_haversine(tata, distance, directions[i], unit = Unit.MILES)
     current_co = (round(current_co[0],3),round(current_co[1],3))
     distance = round(distance,3)
     draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
@@ -201,7 +204,7 @@ while True:
     elif screen == "walk":
         display_walk_screen(dir_index)
     elif screen == "walk_done":
-        display_walk_done_screen()
+        display_walk_done_screen(start, dir_index)
 
     disp.image(image, rotation)
     
