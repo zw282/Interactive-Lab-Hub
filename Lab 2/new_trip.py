@@ -108,7 +108,7 @@ while True:
     # Draw a black filled box to clear the image.
     if screen == "main" and (buttonB.value and not buttonA.value):
         screen = "dir_selection"
-        time.sleep(5)
+        time.sleep(1)
      
     if screen == "main":
         display_main_screen()
