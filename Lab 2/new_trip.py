@@ -103,10 +103,13 @@ def display_dir_selection_screen(i):
     draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
     disp.image(image, rotation)
     time.sleep(0.5)
+    
+def button_a_pressed():
+    return buttonB.value and not buttonA.value
 
 while True:
     # Draw a black filled box to clear the image.
-    if screen == "main" and (buttonB.value and not buttonA.value):
+    if screen == "main" and button_a_pressed():
         screen = "dir_selection"
         time.sleep(1)
      
@@ -114,7 +117,7 @@ while True:
         display_main_screen()
     elif screen == "dir_selection":
         display_dir_selection_screen(dir_index)
-        if (buttonB.value and not buttonA.value):
+        if button_a_pressed():
             if dir_index == 3:
                 dir_index = 0
             else:
