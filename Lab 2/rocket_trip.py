@@ -111,7 +111,7 @@ rocket = Image.open("img1.png")
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "ROCKET TRAVELLER", font=font, fill="#FCC0000")
+    draw.text((0, 0), "ROCKET TRAVELLER", font=font, fill="#F9AD43")
     draw.text((0, 20), "Press Top", font=font, fill="#F9AD43")
     draw.text((0, 40), "To choose your direction", font=font, fill="#F9AD43")
     draw.text((0, 60), "Press Bottom", font=font, fill="#F9AD43")
