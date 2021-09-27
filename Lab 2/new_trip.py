@@ -97,9 +97,9 @@ def display_main_screen():
     draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
     draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
    
-def display_dir_selection_screen():
+def display_dir_selection_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    dirr = dirlist[dir_index]
+    dirr = dirlist[i]
     draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
     disp.image(image, rotation)
     time.sleep(0.5)
@@ -113,7 +113,7 @@ while True:
     if screen == "main":
         display_main_screen()
     elif screen == "dir_selection":
-        display_dir_selection_screen()
+        display_dir_selection_screen(dir_index)
         if button_a_pressed:
             dir_index += 1
 
