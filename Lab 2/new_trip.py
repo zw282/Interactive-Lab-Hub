@@ -161,5 +161,5 @@ while True:
 
     #     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
 
-    #     disp.image(image, rotation)
+        disp.image(image, rotation)
     #     time.sleep(10)
