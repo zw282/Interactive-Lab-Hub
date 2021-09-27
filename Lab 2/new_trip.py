@@ -105,7 +105,7 @@ def display_dir_selection_screen(i):
     time.sleep(0.5)
     
     
-def confirm_direction(i):
+def display_dir_confirm(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
     draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
@@ -123,6 +123,10 @@ while True:
     if screen == "main" and button_a_pressed():
         screen = "dir_selection"
         time.sleep(1)
+        
+    if screen == "dir_selection" and button_b_pressed():
+        screen = "dir_confirm"
+        time.sleep(1)
      
     if screen == "main":
         display_main_screen()
@@ -133,8 +137,8 @@ while True:
                 dir_index = 0
             else:
                 dir_index += 1
-        elif button_b_pressed():
-            confirm_direction(dir_index)
+    elif screen == "dir_confirm":
+        display_dir_confirm(dir_index)
 
     disp.image(image, rotation)
     
