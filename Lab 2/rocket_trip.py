@@ -166,6 +166,9 @@ while True:
         screen = "dir_confirm"
         time.sleep(1)
         
+    if screen == "dir_confirm" and button_a_pressed():
+        screen = "walk"
+   
     if screen == "walk" and button_a_pressed():
         start = time.time()
         disp.image(rocket, rotation)
