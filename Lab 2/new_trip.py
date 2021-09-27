@@ -104,8 +104,19 @@ def display_dir_selection_screen(i):
     disp.image(image, rotation)
     time.sleep(0.5)
     
+    
+def confirm_direction(i):
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[i]
+    draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+    disp.image(image, rotation)            
+    time.sleep(0.5)   
+    
 def button_a_pressed():
     return buttonB.value and not buttonA.value
+
+def button_b_pressed():
+    return buttonA.value and not buttonB.value
 
 while True:
     # Draw a black filled box to clear the image.
@@ -122,26 +133,14 @@ while True:
                 dir_index = 0
             else:
                 dir_index += 1
-
-    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-    # draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
-    # draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
-    # draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+        elif button_b_pressed():
+            confirm_direction(dir_index)
 
     disp.image(image, rotation)
     
     # confirm = False
     
     # #direction loop from dir[0]
-    # i = -1
-#     if buttonB.value and not buttonA.value:            
-#         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-#         i = i+1
-#         dirr = dirlist[i]
-#         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-#         disp.image(image, rotation)
-#         time.sleep(0.5)
         
     #     if buttonA.value and not buttonB.value:
     #         confirm = True 
