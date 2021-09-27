@@ -101,13 +101,13 @@ else:
 rocket = Image.new("RGB", (width, height))
 
 # Get drawing object to draw on image.
-draw = ImageDraw.Draw(rocket)
+#draw = ImageDraw.Draw(rocket)
 
 # Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-disp.image(rocket)
+#draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+#disp.image(rocket)
 
-rocket = Image.open("img1.png")
+#rocket = Image.open("img1.png")
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
