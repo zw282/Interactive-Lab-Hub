@@ -142,7 +142,7 @@ while True:
         time.sleep(1)
         
         if screen == "dir_confirm" and button_a_pressed():
-        screen = "walk"
+            screen = "walk"
    
     if screen == "walk" and button_a_pressed():
         start = time.time()
