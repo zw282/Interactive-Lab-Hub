@@ -88,7 +88,7 @@ dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
 # main, dir_selection
 screen = "main"
-dir_selection_index = 0
+dir_index = 0
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -104,18 +104,24 @@ def display_dir_selection_screen():
     disp.image(image, rotation)
     time.sleep(0.5)
     
-
+def update_dir_index():
+    if dir_index == 3:
+        dir_index = 0
+    else:
+        dir_index += 1
 
 while True:
     # Draw a black filled box to clear the image.
     button_a_pressed = buttonB.value and not buttonA.value
-    if button_a_pressed:
+    if screen == "main" and button_a_pressed:
         screen = "dir_selection"
      
     if screen == "main":
         display_main_screen()
     elif screen == "dir_selection":
         display_dir_selection_screen()
+        if button_a_pressed:
+            update_dir_index()
 
     # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
