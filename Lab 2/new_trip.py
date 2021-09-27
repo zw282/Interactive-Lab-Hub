@@ -109,13 +109,17 @@ while True:
     button_a_pressed = buttonB.value and not buttonA.value
     if screen == "main" and button_a_pressed:
         screen = "dir_selection"
+        time.sleep(1)
      
     if screen == "main":
         display_main_screen()
     elif screen == "dir_selection":
         display_dir_selection_screen(dir_index)
         if button_a_pressed:
-            dir_index += 1
+            if dir_index == 3:
+                dir_index = 0
+            else:
+                dir_index += 1
 
     # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
