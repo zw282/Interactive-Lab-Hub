@@ -93,7 +93,7 @@ dir_index = 0
 
 
 # set up rocket image
-rocket = Image.open("rocket.jpeg")
+rocket = Image.open("rocket.jpg")
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
