@@ -79,7 +79,7 @@ button.switch_to_input()
 tata = (40.7578325,-73.9559878) #(lat, lon)
 
 # This is the average driving speed mph
-driving_speed = 10000
+driving_speed = 17600
 
 # This is the average driving time in seconds
 #average_time = main_distance / driving_speed * 3600
@@ -87,40 +87,149 @@ driving_speed = 10000
 # This is the default direction
 dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
-while True:
-    # Draw a black filled box to clear the image.
+# main, dir_selection
+screen = "main"
+dir_index = 0
+
+# Make sure to create image with mode 'RGB' for full color.
+if disp.rotation % 180 == 90:
+    height = disp.width  # we swap height/width to rotate it to landscape!
+    width = disp.height
+else:
+    width = disp.width  # we swap height/width to rotate it to landscape!
+    height = disp.height
+rocket = Image.new("RGB", (width, height))
+
+# Get drawing object to draw on image.
+draw = ImageDraw.Draw(rocket)
+
+# Draw a black filled box to clear the image.
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(rocket)
+
+rocket = Image.open("rocket.jpg")
+
+def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
-    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
-    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+    draw.text((0, 0), "ROCKET TRAVELLER", font=minecraft, fontsize= fill="#FCC0000")
+    draw.text((0, 20), "Press Top", font=font, fill="#F9AD43")
+    draw.text((0, 40), "To choose your direction", font=font, fill="#F9AD43")
+    draw.text((0, 60), "Press Bottom", font=font, fill="#F9AD43")
+    draw.text((0, 80), "To confirm", font=font, fill="#F9AD43")
+   
+def display_dir_selection_screen(i):
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[i]
+    draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
     disp.image(image, rotation)
+    time.sleep(0.5)
     
- 
-    confirm_dir = False   
-    while confirm_dir == False:
-    #direction loop from dir[0]
-        i = 0
-        if buttonB.value and not buttonA.value:     
-            draw.rectangle((0, 0, width, height), outline=0, fill=0)
-            dirr = dirlist[i]
-            i = i+1
-            if i >3 :
-                i = i % 4 - 1         
-            draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
-            disp.image(image, rotation)
-            time.sleep(0.5)
-            continue 
-        
-        if buttonA.value and not buttonB.value:
-            draw.rectangle((0, 0, width, height), outline=0, fill=0)   
-            draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-            disp.image(image, rotation)            
-            confirm_dir = True  
-            time.sleep(1) 
     
-    if confirm_dir == True:
+def display_dir_confirm(i):
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[i]
+    draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+    draw.text((0, 20), "from TATA " + str(dirr), font=font, fill="#F9AD43")
+    draw.text((0, 40), "press top to start ", font=font, fill="#F9AD43")
+    disp.image(image, rotation)            
+    time.sleep(0.5)   
+    
+def display_walk_screen(i):
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    dirr = dirlist[i]
+    dirr = str(dirr)    
+    time.sleep(0.5)
+    
+    
+    
+
+    
+def button_a_pressed():
+    return buttonB.value and not buttonA.value
+
+def button_b_pressed():
+    return buttonA.value and not buttonB.value
+
+while True:
+    # transition from screen to screen
+    if screen == "main" and button_a_pressed():
+        screen = "dir_selection"
         time.sleep(1)
         
+    if screen == "dir_selection" and button_a_pressed():
+        if dir_index == 3:
+            dir_index = 0
+        else:
+            dir_index += 1
+        
+    if screen == "dir_selection" and button_b_pressed():
+        screen = "dir_confirm"
+        time.sleep(1)
+        
+    if screen == "walk" and button_a_pressed():
+        start = time.time()
+        disp.image(rocket, rotation)
+
+                  
+    if screen == "walk" and button_b_pressed():
+        end = time.time()
+        driving_time = end - start
+        distance = (driving_speed * driving_time) / 3600
+        current_co = inverse_haversine(tata, distance, Direction.str(dirr), unit = Unit.MILES)
+        current_co = (round(current_co[0],3),round(current_co[1],3))
+        distance = round(distance,3)
+        draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
+        draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
+        draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
+        draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+        draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
+        disp.image(image, rotation)
+        time.sleep(10)
+        
+        
+        
+        
+    
+    # display screen
+    if screen == "main":
+        display_main_screen()
+    elif screen == "dir_selection":
+        display_dir_selection_screen(dir_index)
+    elif screen == "dir_confirm":
+        display_dir_confirm(dir_index)
+    elif screen == "walk":
+        display_walk_screen(dir_index)
+
+    disp.image(image, rotation)
+    
+    # end = None
+    
+    # if buttonB.value and not buttonA.value:
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     start = time.time()
+    #     START = 'Start traveling'
+    #     draw.text((0, 20), START, font=font, fill="#F9AD43")
+    #     disp.image(image, rotation)
+    #     time.sleep(0.5)
+        
+    #     while end == None:
+    #         if buttonB.value and not buttonA.value:
+    #             end = time.time()
+        
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     driving_time = end - start
+    #     distance = (driving_speed * driving_time) / 3600
+    #     current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
+    #     current_co = (round(current_co[0],3),round(current_co[1],3))
+    #     distance = round(distance,3)
+    #     draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
+    #     draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
+    #     draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
+    #     draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+
+    #     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
+
+#         disp.image(image, rotation)
+    #     time.sleep(10)
       
 
