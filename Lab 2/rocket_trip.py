@@ -171,7 +171,7 @@ while True:
    
     if screen == "walk" and button_a_pressed():
         start = time.time()
-        disp.image(rocket, rotation)
+        disp.image(image, rotation)
 
                   
     if screen == "walk" and button_b_pressed():
