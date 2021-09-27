@@ -103,12 +103,6 @@ def display_dir_selection_screen():
     draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
     disp.image(image, rotation)
     time.sleep(0.5)
-    
-def update_dir_index():
-    if dir_index == 3:
-        dir_index = 0
-    else:
-        dir_index += 1
 
 while True:
     # Draw a black filled box to clear the image.
@@ -121,7 +115,7 @@ while True:
     elif screen == "dir_selection":
         display_dir_selection_screen()
         if button_a_pressed:
-            update_dir_index()
+            dir_index += 1
 
     # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
