@@ -86,64 +86,80 @@ driving_speed = 10000
 # This is the default direction
 dirlist = ["EAST", "WEST", "SOUTH", "NORTH"]
 
+# main, dir_selection
+screen = "main"
+
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
-    draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
-    draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
-    draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
-
-    disp.image(image, rotation)
-    
-    confirm = False
-    
-    #direction loop from dir[0]
-    i = -1
-    if buttonB.value and not buttonA.value:            
+    if screen == "main":
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        i = i+1
-        dirr = dirlist[i]
+        draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
+        draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
+        draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
+        draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+    elif screen == "dir_selection":
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        dirr = dirlist[0]
         draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
         disp.image(image, rotation)
         time.sleep(0.5)
+
+    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    # draw.text((0, 0), "Press Top", font=font, fill="#F9AD43")
+    # draw.text((0, 20), "To choose your direction", font=font, fill="#F9AD43")
+    # draw.text((0, 40), "Press Bottom", font=font, fill="#F9AD43")
+    # draw.text((0, 60), "To confirm", font=font, fill="#F9AD43")
+
+    # disp.image(image, rotation)
+    
+    # confirm = False
+    
+    # #direction loop from dir[0]
+    # i = -1
+    # if buttonB.value and not buttonA.value:            
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     i = i+1
+    #     dirr = dirlist[i]
+    #     draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+    #     disp.image(image, rotation)
+    #     time.sleep(0.5)
         
-        if buttonA.value and not buttonB.value:
-            confirm = True 
-            continue
+    #     if buttonA.value and not buttonB.value:
+    #         confirm = True 
+    #         continue
             
-    if confirm == True:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-        disp.image(image, rotation)            
-        time.sleep(1)   
+    # if confirm == True:
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
+    #     disp.image(image, rotation)            
+    #     time.sleep(1)   
     
-    end = None
+    # end = None
     
-    if buttonB.value and not buttonA.value:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        start = time.time()
-        START = 'Start traveling'
-        draw.text((0, 20), START, font=font, fill="#F9AD43")
-        disp.image(image, rotation)
-        time.sleep(0.5)
+    # if buttonB.value and not buttonA.value:
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     start = time.time()
+    #     START = 'Start traveling'
+    #     draw.text((0, 20), START, font=font, fill="#F9AD43")
+    #     disp.image(image, rotation)
+    #     time.sleep(0.5)
         
-        while end == None:
-            if buttonB.value and not buttonA.value:
-                end = time.time()
+    #     while end == None:
+    #         if buttonB.value and not buttonA.value:
+    #             end = time.time()
         
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        driving_time = end - start
-        distance = (driving_speed * driving_time) / 3600
-        current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
-        current_co = (round(current_co[0],3),round(current_co[1],3))
-        distance = round(distance,3)
-        draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
-        draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
-        draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
-        draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    #     driving_time = end - start
+    #     distance = (driving_speed * driving_time) / 3600
+    #     current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
+    #     current_co = (round(current_co[0],3),round(current_co[1],3))
+    #     distance = round(distance,3)
+    #     draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
+    #     draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
+    #     draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
+    #     draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
 
-        draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
+    #     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
 
-        disp.image(image, rotation)
-        time.sleep(10)
+    #     disp.image(image, rotation)
+    #     time.sleep(10)
