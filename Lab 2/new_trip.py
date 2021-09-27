@@ -119,42 +119,30 @@ def button_b_pressed():
     return buttonA.value and not buttonB.value
 
 while True:
-    # Draw a black filled box to clear the image.
+    # transition from screen to screen
     if screen == "main" and button_a_pressed():
         screen = "dir_selection"
         time.sleep(1)
         
+    if screen == "dir_selection" and button_a_pressed():
+        if dir_index == 3:
+            dir_index = 0
+        else:
+            dir_index += 1
+        
     if screen == "dir_selection" and button_b_pressed():
         screen = "dir_confirm"
         time.sleep(1)
-     
+    
+    # display screen
     if screen == "main":
         display_main_screen()
     elif screen == "dir_selection":
         display_dir_selection_screen(dir_index)
-        if button_a_pressed():
-            if dir_index == 3:
-                dir_index = 0
-            else:
-                dir_index += 1
     elif screen == "dir_confirm":
         display_dir_confirm(dir_index)
 
     disp.image(image, rotation)
-    
-    # confirm = False
-    
-    # #direction loop from dir[0]
-        
-    #     if buttonA.value and not buttonB.value:
-    #         confirm = True 
-    #         continue
-            
-    # if confirm == True:
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    #     draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-    #     disp.image(image, rotation)            
-    #     time.sleep(1)   
     
     # end = None
     
