@@ -164,20 +164,24 @@ while True:
         
     if screen == "dir_selection" and button_b_pressed():
         screen = "dir_confirm"
+        print("selection")
         time.sleep(1)
         
     if screen == "dir_confirm" and button_a_pressed() or button_b_pressed():
         screen = "walk"
-        print(1)
+        print("confirmed - go to walk")
         time.sleep(1)
     
     if screen == "walk" and button_a_pressed():
+        print("start calculating time")
         start = time.time()
         disp.image(rocket, rotation)
         
     if screen == "walk" and button_b_pressed():
         end = time.time()
+        print("calculated time")
         screen = "walk_done"
+        print("done")
         time.sleep(0.5)
     
 
