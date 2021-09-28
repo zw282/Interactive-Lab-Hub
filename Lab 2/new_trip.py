@@ -119,15 +119,15 @@ rocket2 = resize_image(Image.open("rocket2.jpg"))
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((20, 0), "ROCKET TRAVELLER", font=font, fill="#CC0000")
-    draw.text((0, 20), "Press Top", font=font, fill="#F9AD43")
-    draw.text((0, 40), "To choose your direction", font=font, fill="#F9AD43")
-    draw.text((0, 60), "Press Bottom", font=font, fill="#F9AD43")
-    draw.text((0, 80), "To confirm", font=font, fill="#F9AD43")
+    draw.text((0, 20), "Press Top", font=font, fill="#FFFFFF")
+    draw.text((0, 40), "To choose your direction", font=font, fill="#FFFFFF")
+    draw.text((0, 60), "Press Bottom", font=font, fill="#FFFFFF")
+    draw.text((0, 80), "To confirm", font=font, fill="#FFFFFF")
    
 def display_dir_selection_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
-    draw.text((0,0), str(dirr), font=font, fill ="#F9AD43")
+    draw.text((40,40), str(dirr), font=font, fill ="#CC0000")
     disp.image(image, rotation)
     time.sleep(0.5)
     
@@ -135,9 +135,9 @@ def display_dir_selection_screen(i):
 def display_dir_confirm(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
-    draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#F9AD43")
-    draw.text((0, 20), "from TATA " + str(dirr), font=font, fill="#F9AD43")
-    draw.text((0, 40), "press top to start ", font=font, fill="#F9AD43")
+    draw.text((0, 0), "you are travelling " + str(dirr), font=font, fill="#FFFFFF")
+    draw.text((0, 20), "from TATA ", font=font, fill="#FFFFFF")
+    draw.text((0, 40), "press top to start ", font=font, fill="#CC0000")
     disp.image(image, rotation)            
     time.sleep(1)   
     
@@ -158,10 +158,10 @@ def display_walk_done_screen(start, i):
     current_co = inverse_haversine(tata, distance, directions[i], unit = Unit.MILES)
     current_co = (round(current_co[0],3),round(current_co[1],3))
     distance = round(distance,3)
-    draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
-    draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
-    draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
-    draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
+    draw.text((0, 0), "You have travelled", font=font, fill="#FFFFFF")
+    draw.text((0, 20), str(distance) + "miles", font=font, fill="#CC0000")
+    draw.text((0, 40), "Your coordinates are", font=font, fill="#FFFFFF")
+    draw.text((0, 60), str(current_co), font=font, fill="#CC0000")
     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
     disp.image(image, rotation)
     time.sleep(10)
