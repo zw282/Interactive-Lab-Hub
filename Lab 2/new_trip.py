@@ -99,6 +99,16 @@ directions = [Direction.EAST, Direction.WEST, Direction.SOUTH, Direction.NORTH]
 rocket = Image.open("rocket1.jpg")
 red = Image.open("red.jpg")
 
+image_ratio = red.width / red.height
+screen_ratio = width / height
+if screen_ratio < image_ratio:
+    scaled_width = red.width * height // red.height
+    scaled_height = height
+else:
+    scaled_width = width
+    scaled_height = red.height * width // red.width
+red = red.resize((scaled_width, scaled_height), Image.BICUBIC)
+
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((0, 0), "ROCKET TRAVELLER", font=font, fill="#F9AD43")
