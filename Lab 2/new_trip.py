@@ -108,8 +108,9 @@ else:
     scaled_width = width
     scaled_height = red.height * width // red.width
 red = red.resize((scaled_width, scaled_height), Image.BICUBIC)
-print(red.width)
-print(red.height)
+x = scaled_width // 2 - width // 2
+y = scaled_height // 2 - height // 2
+red = red.crop((x, y, x + width, y + height))
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
