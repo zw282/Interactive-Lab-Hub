@@ -127,7 +127,7 @@ def display_main_screen():
 def display_dir_selection_screen(i):
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     dirr = dirlist[i]
-    draw.text((40,40), str(dirr), font=font, fill ="#CC0000")
+    draw.text((60,40), str(dirr), font=font, fill ="#CC0000")
     disp.image(image, rotation)
     time.sleep(0.5)
     
@@ -159,10 +159,10 @@ def display_walk_done_screen(start, i):
     current_co = (round(current_co[0],3),round(current_co[1],3))
     distance = round(distance,3)
     draw.text((0, 0), "You have travelled", font=font, fill="#FFFFFF")
-    draw.text((0, 20), str(distance) + "miles", font=font, fill="#CC0000")
+    draw.text((40, 20), str(distance) + "miles", font=font, fill="#F9AD43")
     draw.text((0, 40), "Your coordinates are", font=font, fill="#FFFFFF")
-    draw.text((0, 60), str(current_co), font=font, fill="#CC0000")
-    draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
+    draw.text((20, 60), str(current_co), font=font, fill="#F9AD43")
+    draw.text((0, 80), "Check where you are!", font=font, fill="#CC0000")
     disp.image(image, rotation)
     time.sleep(10)
     
@@ -195,13 +195,13 @@ while True:
         print("confirmed - go to walk")
         time.sleep(1)
     
-    if screen == "walk" and button_a_pressed():
+    if screen == "walk":
         print("start calculating time")
         start = time.time()
         disp.image(rocket, rotation)
         time.sleep(1)
         
-    if screen == "walk" and button_b_pressed():
+    if screen == "walk" and button_a_pressed():
         end = time.time()
         print("calculated time")
         screen = "walk_done"
