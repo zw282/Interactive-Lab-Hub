@@ -99,7 +99,7 @@ directions = [Direction.EAST, Direction.WEST, Direction.SOUTH, Direction.NORTH]
 rocket = resize_image(Image.open("rocket.jpg"))
 red = resize_image(Image.open("red.jpg"))
 
-def resize_image(image)
+def resize_image(image):
     image_ratio = image.width / image.height
     screen_ratio = width / height
     if screen_ratio < image_ratio:
