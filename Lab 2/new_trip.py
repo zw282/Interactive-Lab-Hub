@@ -114,7 +114,7 @@ def resize_image(image):
     return image
 
 rocket = resize_image(Image.open("rocket.jpg"))
-red = resize_image(Image.open("red.jpg"))
+rocket2 = resize_image(Image.open("rocket2.jpg"))
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -147,7 +147,7 @@ def display_walk_screen():
     #dirr = str(dirr) 
     disp.image(rocket, rotation)
     time.sleep(1)
-    disp.image(red, rotation)
+    disp.image(rocket2, rotation)
     time.sleep(1)
 
     
@@ -206,15 +206,8 @@ while True:
         print("calculated time")
         screen = "walk_done"
         print("done")
-        time.sleep(1)
-    
-
-
-        
-        
-        
-        
-    
+        time.sleep(1)      
+                
     # display screen
     if screen == "main":
         display_main_screen()
@@ -229,34 +222,5 @@ while True:
 
     disp.image(image, rotation)
     
-    # end = None
-    
-    # if buttonB.value and not buttonA.value:
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    #     start = time.time()
-    #     START = 'Start traveling'
-    #     draw.text((0, 20), START, font=font, fill="#F9AD43")
-    #     disp.image(image, rotation)
-    #     time.sleep(0.5)
-        
-    #     while end == None:
-    #         if buttonB.value and not buttonA.value:
-    #             end = time.time()
-        
-    #     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    #     driving_time = end - start
-    #     distance = (driving_speed * driving_time) / 3600
-    #     current_co = inverse_haversine(tata, distance, Direction.EAST, unit = Unit.MILES)
-    #     current_co = (round(current_co[0],3),round(current_co[1],3))
-    #     distance = round(distance,3)
-    #     draw.text((0, 0), "You have travelled", font=font, fill="#F9AD43")
-    #     draw.text((0, 20), str(distance) + "miles", font=font, fill="#F9AD43")
-    #     draw.text((0, 40), "Your coordinates are", font=font, fill="#F9AD43")
-    #     draw.text((0, 60), str(current_co), font=font, fill="#F9AD43")
 
-    #     draw.text((0, 80), "Check where you are!", font=font, fill="#F9AD43")
-
-#         disp.image(image, rotation)
-    #     time.sleep(10)
-      
 
