@@ -79,7 +79,7 @@ button.switch_to_input()
 tata = (40.7578325,-73.9559878) #(lat, lon)
 
 # This is the average driving speed mph
-driving_speed = 17600
+driving_speed = 17000
 
 # This is the average driving time in seconds
 #average_time = main_distance / driving_speed * 3600
