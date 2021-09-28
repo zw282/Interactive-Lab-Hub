@@ -226,17 +226,17 @@ As always, make sure you document contributions and ideas from others explicitly
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
-
+**
 For part 2, make sure to install the haversine package before trying out the code.
 
 we modified the way of transportation based on the original idea - you’ll now travel in a rocket! 
 
 Users start from the TATA Innovation Center. Button A will allow users to choose the direction they wish to travel to - South, East, North, or West. And Button B will allow users to start their trip. After choosing directions and pressing start, users will travel at a fixed rocket speed. The clock will calculate the time and distance traveled. When users press stop (button B), the clock will show a pair of coordinates of where the user is currently. For different trip duration and directions, the user will get different coordinates. They could simply lookup on Google Maps to find out the exact location of the coordinates. 
 
-We designed this travel clock to be a travel mystery box -  you won't know where you will end up each time. We hope this can give the user a fun experience when they are working on different things. 
+We designed this travel clock to be a travel mystery box -  you won't know where you will end up each time. We hope this can give the user a fun experience when they are working on different things. **
 
 
 https://user-images.githubusercontent.com/55099696/135005340-7656160f-14f1-4b25-b17b-47c12d045c04.mp4
 
-Work Distribution:
-We worked on the project ideation together.Ruby Panworked on the design of the interface and the pictures showing up in the clock. Emma Zhenghe Wangfocused primarily on the overall structure of the codes. Ruby coded screens including “main”, “dir_selection”, and “dir_confirm”; while Emma coded screens including “walk” and “walk_done”. We conducted testing together and helped each other with debugging. At the end, we filmed the video together. 
+**Work Distribution:
+We worked on the project ideation together.Ruby Panworked on the design of the interface and the pictures showing up in the clock. Emma Zhenghe Wangfocused primarily on the overall structure of the codes. Ruby coded screens including “main”, “dir_selection”, and “dir_confirm”; while Emma coded screens including “walk” and “walk_done”. We conducted testing together and helped each other with debugging. At the end, we filmed the video together. **
