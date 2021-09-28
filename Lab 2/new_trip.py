@@ -195,13 +195,13 @@ while True:
         print("confirmed - go to walk")
         time.sleep(1)
     
-    if screen == "walk":
+    if screen == "walk" and button_a_pressed():
         print("start calculating time")
         start = time.time()
         disp.image(rocket, rotation)
         time.sleep(1)
         
-    if screen == "walk" and button_a_pressed():
+    if screen == "walk" and button_b_pressed():
         end = time.time()
         print("calculated time")
         screen = "walk_done"
