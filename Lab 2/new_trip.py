@@ -97,6 +97,7 @@ directions = [Direction.EAST, Direction.WEST, Direction.SOUTH, Direction.NORTH]
 
 # set up rocket image
 rocket = Image.open("rocket1.jpg")
+red = Image.open("red.jpg")
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -123,11 +124,13 @@ def display_dir_confirm(i):
     disp.image(image, rotation)            
     time.sleep(1)   
     
-def display_walk_screen(i):
+def display_walk_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    dirr = dirlist[i]
-    dirr = str(dirr) 
+    #dirr = dirlist[i]
+    #dirr = str(dirr) 
     disp.image(rocket, rotation)
+    time.sleep(1)
+    disp.image(red, rotation)
     time.sleep(1)
 
     
@@ -203,7 +206,7 @@ while True:
     elif screen == "dir_confirm":
         display_dir_confirm(dir_index)
     elif screen == "walk":
-        display_walk_screen(dir_index)
+        display_walk_screen()
     elif screen == "walk_done":
         display_walk_done_screen(start, dir_index)
 
