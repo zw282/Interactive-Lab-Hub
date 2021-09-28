@@ -218,14 +218,6 @@ We designed this clock to be a travel mystery box -  you won't know where you wi
 
 # Lab 2 Part 2
 
-Pull Interactive Lab Hub updates to your repo.
-
-Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
-
-As always, make sure you document contributions and ideas from others explicitly in your writeup.
-
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
-
 For part 2, make sure to install the haversine package before trying out the code.
 
 we modified the way of transportation based on the original idea - you’ll now travel in a rocket! 
@@ -236,7 +228,7 @@ We designed this travel clock to be a travel mystery box -  you won't know where
 
 https://user-images.githubusercontent.com/90153252/135005337-0127e20b-41dd-4d49-b2cf-ec3462720c66.mp4
 
-Work Distribution:
+**Work Distribution:**
 
 We worked on the project ideation together.Ruby Panworked on the design of the interface and the pictures showing up in the clock. Emma Zhenghe Wangfocused primarily on the overall structure of the codes. Ruby coded screens including “main”, “dir_selection”, and “dir_confirm”; while Emma coded screens including “walk” and “walk_done”. We conducted testing together and helped each other with debugging. At the end, we filmed the video together. 
 
