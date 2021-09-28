@@ -118,7 +118,7 @@ rocket2 = resize_image(Image.open("rocket2.jpg"))
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((0, 0), "ROCKET TRAVELLER", font=font, fill="#F9AD43")
+    draw.text((20, 0), "ROCKET TRAVELLER", font=font, fill="#CC0000")
     draw.text((0, 20), "Press Top", font=font, fill="#F9AD43")
     draw.text((0, 40), "To choose your direction", font=font, fill="#F9AD43")
     draw.text((0, 60), "Press Bottom", font=font, fill="#F9AD43")
