@@ -96,8 +96,7 @@ directions = [Direction.EAST, Direction.WEST, Direction.SOUTH, Direction.NORTH]
 
 
 # set up rocket image
-rocket = resize_image(Image.open("rocket.jpg"))
-red = resize_image(Image.open("red.jpg"))
+
 
 def resize_image(image):
     image_ratio = image.width / image.height
@@ -113,6 +112,9 @@ def resize_image(image):
     y = scaled_height // 2 - height // 2
     image = image.crop((x, y, x + width, y + height))
     return image
+
+rocket = resize_image(Image.open("rocket.jpg"))
+red = resize_image(Image.open("red.jpg"))
 
 def display_main_screen():
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
