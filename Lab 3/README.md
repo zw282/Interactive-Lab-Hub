@@ -102,8 +102,37 @@ From a remote browser on the same network, check to make sure your webserver is 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
 \*\***Post your storyboard and diagram here.**\*\*
+![IMG_0341](https://user-images.githubusercontent.com/55099696/135774127-617a7a27-6227-44ba-9f1b-43240987a1ee.jpg)
+![IMG_0342](https://user-images.githubusercontent.com/55099696/135774133-4e6dc6e1-ca33-4b68-a965-e82d2a4f190c.jpg)
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+
+We designed a **smart planter that allows plants and flowers to talk**. We listed several possible dialogs before we act out the interaction:
+U: user P: Plant
+U: How are you feeling today?
+P: I am feeling great! / It’s too hot(cold) for me./ I need some water./I need sunbathing./ I feel bugs.
+U: Do you like the temperature here?
+P: I’m ok!/ It’s too hot (cold) for me.
+U: What’s your ideal room temperature? / What’s your ideal room humidity? 
+P: It’s xxx (eg. 22 celsius degree) / It’s 50%.
+U: Do you need watering/fertilizing? 
+P: Yes/No.
+U: Can you tell me when should I water you / add fertilizers next?
+P: In 2 days.
+U: Do you need sunbathing? 
+P: Yes. (For xxx hours please) / No. / I don’t like sunlight. 
+U: Do you feel like now you’re having too much/little sunlight?
+P: Yes, please move me to somewhere with shades. / Yes, I need sunbathing! 
+U: Are you lonely?
+P: Yes, I need some friends. / No, I’d love to be your only one. 
+U: When will you begin to bloom?
+P: In xxx days. / I won’t bloom anymore. / I'm a green plant, I don’t.
+U: Do you generate oxygen? 
+P: Yes. / No. 
+
+brainstorming process: 
+![WechatIMG747](https://user-images.githubusercontent.com/55099696/135773797-cc3867d6-f0fd-4a68-aeff-ce596c353be8.jpeg)
+![WechatIMG746](https://user-images.githubusercontent.com/55099696/135773800-8d437fe7-e417-470b-8815-e53ca4259a64.jpeg)
 
 \*\***Please describe and document your process.**\*\*
 
@@ -112,6 +141,7 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
