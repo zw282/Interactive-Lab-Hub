@@ -108,25 +108,35 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 We designed a **smart planter that allows plants and flowers to talk**. We listed several possible dialogs before we act out the interaction:
+
 U: user P: Plant
-U: How are you feeling today?
+U: How are you feeling today? 
 P: I am feeling great! / It’s too hot(cold) for me./ I need some water./I need sunbathing./ I feel bugs.
+
 U: Do you like the temperature here?
 P: I’m ok!/ It’s too hot (cold) for me.
+
 U: What’s your ideal room temperature? / What’s your ideal room humidity? 
 P: It’s xxx (eg. 22 celsius degree) / It’s 50%.
+
 U: Do you need watering/fertilizing? 
 P: Yes/No.
+
 U: Can you tell me when should I water you / add fertilizers next?
 P: In 2 days.
+
 U: Do you need sunbathing? 
 P: Yes. (For xxx hours please) / No. / I don’t like sunlight. 
+
 U: Do you feel like now you’re having too much/little sunlight?
 P: Yes, please move me to somewhere with shades. / Yes, I need sunbathing! 
+
 U: Are you lonely?
 P: Yes, I need some friends. / No, I’d love to be your only one. 
+
 U: When will you begin to bloom?
 P: In xxx days. / I won’t bloom anymore. / I'm a green plant, I don’t.
+
 U: Do you generate oxygen? 
 P: Yes. / No. 
 
