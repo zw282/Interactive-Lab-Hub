@@ -45,6 +45,8 @@ while not screenColor:
     except ValueError:
         # catch colors we don't recognize and go again
         print("whoops I don't know that one")
+
+
 # Main loop:
 while True:
     if buttonA.value and buttonB.value:
