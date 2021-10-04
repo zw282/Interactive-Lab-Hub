@@ -163,7 +163,12 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
 
+https://user-images.githubusercontent.com/90153252/135798612-15f67e60-2a9a-4ba9-91d3-1862df763216.mp4
+
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+
+The interaction was similar to what we had planned. The user asked questions regarding blooming, water, and sunlight. One thing the user asked that was not in our planned dialog - setting alarms. He first asked about what’s a good time to water next and then asked if the plant could set up an alarm for it. It sounds like a good feature to take into consideration in the next part.
+
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
