@@ -171,8 +171,19 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+Peer Review:
+![WechatIMG360](https://user-images.githubusercontent.com/55099696/137246895-00372552-276b-445c-acb9-42bbefb78ded.jpeg)
+![WechatIMG361](https://user-images.githubusercontent.com/55099696/137246899-1edab2e5-8620-4396-ac3d-fecd2dfa3a1b.jpeg)
+![WechatIMG362](https://user-images.githubusercontent.com/55099696/137246908-8108fc0c-f05e-4f00-9a05-5aad9f61001c.jpeg)
+
+Based on what we discussed and the peer reviews, we wanted to include specific plant information about the plant in this part. For example, different plants might need different amount of watering and sunlight. Many users do not really understand what the plant needs, so we are including a fun self-introduction for the plant at the beginning of the conversation. 
+
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+In this part, we will ask the users to move the plant around so that the sensor can check different temperatures at different places. We planned this interaction because in a room, there might be a corner that is getting ample direct sunlight while some other corner might be darker and colder instead. The smart plant will instruct users to "move it around" directly so users won't get confused.
+
 3. Make a new storyboard, diagram and/or script based on these reflections.
+![WechatIMG878](https://user-images.githubusercontent.com/55099696/137246460-f6666a36-c811-45dc-a585-6d9a36c2054b.jpeg)
+
 
 ## Prototype your system
 
@@ -183,7 +194,10 @@ The system should:
 
 *Document how the system works*
 
+The system works as a smart plant communication device. We designed it to be like a wearable "collar" for the plant. We used a sensor for detecting the temperature in the room, more specifically the place the plant is put. First, the system will ask the user to identify itself. We offered a few plants available to choose, they are cactus, airplant, sunflower, and orchid. All the four types of plant will introduce themselves once identified. Then, the system will ask the user to move the plant around. Once users say "done", the sensor will detect the temperature and let the user know whether this is a good place for the plant to grow. Then, it allows users to ask different questions regarding the plant. For example, users can ask "do you need water?" "do you need friend?".etc Users can also ask other questions.
+
 *Include videos or screencaptures of both the system and the controller.*
+![WechatIMG879](https://user-images.githubusercontent.com/55099696/137246504-feae746d-0293-4920-9dfe-6489e0b4a384.jpeg)
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
@@ -192,7 +206,8 @@ Answer the following:
 
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
-
+In general, we found that the conversation with the plant went well. It felt natural for the plant to lead the conversation and give humorous responses
+Voice recognition for the names of the plant was hard at the beginning. One of the users 
 ### What worked well about the controller and what didn't?
 
 \*\**your answer here*\*\*
