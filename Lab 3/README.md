@@ -180,6 +180,7 @@ Peer Review:
 Based on what we discussed and the peer reviews, we wanted to include specific plant information about the plant in this part. For example, different plants might need different amount of watering and sunlight. Many users do not really understand what the plant needs, so we are including a fun self-introduction for the plant at the beginning of the conversation. Also, we wanted a fun interaction between the user and the plant. 
 
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+
 In this part, we will ask the users to move the plant around so that the sensor can check different temperatures at different places. We planned this interaction because in a room, there might be a corner that is getting ample direct sunlight while some other corner might be darker and colder instead. The smart plant will instruct users to "move it around" directly so users won't get confused.
 
 3. Make a new storyboard, diagram and/or script based on these reflections.
@@ -204,6 +205,7 @@ The system works as a smart plant communication device. We designed it to be lik
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
 Participant 1 - Hongyu Shen hs692
+
 https://user-images.githubusercontent.com/55099696/137247945-0391b7f3-c9e5-4172-8a2b-bbc632b7164d.mp4
 
 Participant 2 - Xy Fang xf48
