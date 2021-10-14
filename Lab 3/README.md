@@ -171,12 +171,13 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+
 Peer Review:
 ![WechatIMG360](https://user-images.githubusercontent.com/55099696/137246895-00372552-276b-445c-acb9-42bbefb78ded.jpeg)
 ![WechatIMG361](https://user-images.githubusercontent.com/55099696/137246899-1edab2e5-8620-4396-ac3d-fecd2dfa3a1b.jpeg)
 ![WechatIMG362](https://user-images.githubusercontent.com/55099696/137246908-8108fc0c-f05e-4f00-9a05-5aad9f61001c.jpeg)
 
-Based on what we discussed and the peer reviews, we wanted to include specific plant information about the plant in this part. For example, different plants might need different amount of watering and sunlight. Many users do not really understand what the plant needs, so we are including a fun self-introduction for the plant at the beginning of the conversation. 
+Based on what we discussed and the peer reviews, we wanted to include specific plant information about the plant in this part. For example, different plants might need different amount of watering and sunlight. Many users do not really understand what the plant needs, so we are including a fun self-introduction for the plant at the beginning of the conversation. Also, we wanted a fun interaction between the user and the plant. 
 
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
 In this part, we will ask the users to move the plant around so that the sensor can check different temperatures at different places. We planned this interaction because in a room, there might be a corner that is getting ample direct sunlight while some other corner might be darker and colder instead. The smart plant will instruct users to "move it around" directly so users won't get confused.
@@ -202,22 +203,38 @@ The system works as a smart plant communication device. We designed it to be lik
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
+Participant 1 - Hongyu Shen hs692
+https://user-images.githubusercontent.com/55099696/137247945-0391b7f3-c9e5-4172-8a2b-bbc632b7164d.mp4
+
+Participant 2 - Xy Fang xf48
+
+https://user-images.githubusercontent.com/55099696/137248225-e7021d58-58e5-4dde-befc-2d3eaeca68a8.mp4
+
+
 Answer the following:
 
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
-In general, we found that the conversation with the plant went well. It felt natural for the plant to lead the conversation and give humorous responses
-Voice recognition for the names of the plant was hard at the beginning. One of the users 
+
+In general, we found that the conversation with the plant went well. It felt natural for the plant to lead the conversation and give humorous responses. The users both agreed that the flow of the conversation was natural. 
+However, voice recognition of the names of the plant was hard at the beginning when we were testing it out. The volume was a little bit low and we did not understand how to adjust the volume. Lastly, due to the fact that our pi was connected with a short cable, the users were not able to move the device around the room a lot. 
+
 ### What worked well about the controller and what didn't?
 
 \*\**your answer here*\*\*
+
+In this case, we have already made the system autonomous. Users won't have to use a controller to navigate but only have to ask and talk to the device. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 \*\**your answer here*\*\*
 
+We found out that communication between human and human with computer could be highly different. When we were engaging in conversation with our peers, wordings we used were natural and informal. Sometimes we even used long sentences to ask questions. But while we tried to interact with the system, we just naturally used more formal languages and shorter sentences. It might be due to the fact that we don't expect the machine to be very smart, or, we thought that it could only take certain imput. Therefore, we found out that making the machine / device we're talking to more "humanlike" might be better.
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
 
+We might get a dataset for the most frequently asked questions as a plant owner. For example, the device takes note and uploads to the cloud service everytime the user talks or asks a question to the device. From there, we can analyze what global plant owners concern the most about. We can also have the device record pairs of temperature and location data in the room. For example, at 6 am in the morning, the southwest corner of the room is the coldest, while at 8 pm, the northwest corner is the warmest. Users can access these data from their mobile devices if possible. 
+
+In terms of sensors, one thing we were not able to achieve was detecting the humidity of the room, which is important for plant growing. We really wish that there could be a sensor that can help us detect humidity. 
