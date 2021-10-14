@@ -1,4 +1,4 @@
-**Collaboration with Zhenghe Wang zw282**
+**Collaboration with Emma Zhenghe Wang zw282**
 
 Please refer to Emma's Lab 3 repo:
 
