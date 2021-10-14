@@ -1,5 +1,9 @@
 **Collaboration with Zhenghe Wang zw282**
 
+Please refer to Emma's Lab 3 repo:
+
+https://github.com/zw282/Interactive-Lab-Hub/tree/Fall2021/Lab%203
+
 # Chatterboxes
 [![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://www.youtube.com/embed/Q8FWzLMobx0?start=19)
 
