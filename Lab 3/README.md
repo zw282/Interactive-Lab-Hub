@@ -1,6 +1,6 @@
 **Collaboration with Emma Zhenghe Wang zw282**
 
-Please refer to Emma's Lab 3 repo:
+Please refer to Emma's Lab 3 repo for Part 2:
 
 https://github.com/zw282/Interactive-Lab-Hub/tree/Fall2021/Lab%203
 
