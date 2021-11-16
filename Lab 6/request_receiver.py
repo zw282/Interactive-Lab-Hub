@@ -6,7 +6,7 @@ import time
 
 requested_toilet_id = None
 
-red_button = qwiic_button.QwiicButton()
+red_button = qwiic_button.QwiicButton(0x6E)
 
 if red_button.begin() == False:
     print("The Red Qwiic Button isn't connected to the system. Please check your connection")
